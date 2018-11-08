@@ -27,11 +27,13 @@ class LinkedList
   end
 
   def get_first
-    if !@head
-      return nil
-    else
-      return @head.data
-    end
+    # if !@head
+    #   return nil
+    # else
+    #   return @head.data
+    # end
+
+    @head ? @head.data : nil
   end
 
   def length
